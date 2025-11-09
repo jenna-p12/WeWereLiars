@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinclair Island Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showPage('home')" class="nav-btn active">Home</button>
+        <button onclick="showPage('timeline')" class="nav-btn">Timeline</button>
+        <button onclick="showPage('evidence')" class="nav-btn">Evidence</button>
+        <button onclick="showPage('themes')" class="nav-btn">Themes</button>
+    </nav>
 
+    <div id="home" class="page active">
+        <h1>Sinclair Island</h1>
+        <p class="subtitle">A beautiful family. A private island. A damaged girl.</p>
+        <div class="intro">
+            <p>Welcome to Sinclair Island. Explore the memories, examine the evidence, and uncover the truth.</p>
+        </div>
+    </div>
+
+    <div id="timeline" class="page">
+        <h2>Timeline</h2>
+        <div class="card" onclick="toggleCard(this)">
+            <h3>Summer 8</h3>
+            <p>First Summer - The beginning</p>
+            <div class="detail">
+                <p>Add your memory details here.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <h3>Summer 15</h3>
+            <p>The Accident - Everything changed</p>
+            <div class="detail">
+                <p>Add your memory details here.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <h3>Summer 17</h3>
+            <p>Return - Coming back</p>
+            <div class="detail">
+                <p>Add your memory details here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="evidence" class="page">
+        <h2>Evidence Room</h2>
+        <div class="card" onclick="toggleCard(this)">
+            <h3>The Beach</h3>
+            <p class="quote">We are Liars</p>
+            <div class="detail">
+                <p>Add your analysis here.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <h3>The House</h3>
+            <p class="quote">Clairmont on the hill</p>
+            <div class="detail">
+                <p>Add your analysis here.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <h3>The Dogs</h3>
+            <p class="quote">Add quote here</p>
+            <div class="detail">
+                <p>Add your analysis here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="themes" class="page">
+        <h2>Themes</h2>
+        <div class="theme-box">
+            <h3>Memory and Narration</h3>
+            <p>Add your analysis with citations here.</p>
+        </div>
+        <div class="theme-box">
+            <h3>Privilege and Class</h3>
+            <p>Add your analysis with citations here.</p>
+        </div>
+        <div class="theme-box">
+            <h3>Denial and Truth</h3>
+            <p>Add your analysis with citations here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
