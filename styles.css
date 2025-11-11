@@ -1,35 +1,40 @@
 body {
     font-family: Georgia, serif;
-    background: #1a1a2e;
-    color: #e0e0e0;
+    background: linear-gradient(135deg, #7c98b3 0%, #536878 100%);
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 nav {
-    background: #000;
+    background: rgba(255, 255, 255, 0.95);
     padding: 1rem;
     text-align: center;
-    border-bottom: 2px solid #4a90a4;
+    border-bottom: 3px solid #536878;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav button {
     background: none;
     border: none;
-    color: #a8dadc;
+    color: #536878;
     font-size: 1rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s;
 }
 
 nav button:hover {
-    color: #f1faee;
+    color: #2c3e50;
+    transform: translateY(-2px);
 }
 
 nav button.active {
-    color: #f1faee;
-    border-bottom: 2px solid #4a90a4;
+    color: #2c3e50;
+    border-bottom: 2px solid #536878;
 }
 
 .page {
@@ -44,28 +49,30 @@ nav button.active {
 }
 
 h1 {
-    color: #f1faee;
+    color: #ffffff;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 h2 {
-    color: #f1faee;
+    color: #ffffff;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 h3 {
-    color: #f1faee;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
     text-align: center;
     font-style: italic;
-    color: #a8dadc;
+    color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -75,32 +82,108 @@ h3 {
     max-width: 600px;
     margin: 2rem auto;
     font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #2c3e50;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Timeline - Bright pastels for flashbacks */
+#timeline {
+    background: linear-gradient(135deg, #fce4ec 0%, #e1bee7 50%, #c5cae9 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+#timeline h2 {
+    color: #4a148c;
+}
+
+#timeline .card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #9575cd;
+}
+
+#timeline .card:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 20px rgba(149, 117, 205, 0.4);
+}
+
+#timeline h3 {
+    color: #4a148c;
+}
+
+/* Evidence Room - Darker, moodier for uncovering truth */
+#evidence {
+    background: linear-gradient(135deg, #37474f 0%, #263238 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+#evidence h2 {
+    color: #eceff1;
+}
+
+#evidence .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #78909c;
+}
+
+#evidence .card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 20px rgba(120, 144, 156, 0.3);
+}
+
+#evidence h3 {
+    color: #eceff1;
+}
+
+#evidence .quote {
+    color: #b0bec5;
+}
+
+#evidence .detail {
+    color: #cfd8dc;
+}
+
+/* Themes - Clean white for analysis */
+#themes {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+#themes h2 {
+    color: #2c3e50;
 }
 
 .card {
-    background: rgba(74, 144, 164, 0.1);
-    border: 2px solid #4a90a4;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #7c98b3;
     padding: 1.5rem;
     margin: 1rem 0;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .card:hover {
-    background: rgba(74, 144, 164, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .quote {
     font-style: italic;
-    color: #a8dadc;
+    color: #536878;
 }
 
 .detail {
     display: none;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #4a90a4;
+    border-top: 1px solid #7c98b3;
 }
 
 .detail.show {
@@ -108,9 +191,159 @@ h3 {
 }
 
 .theme-box {
-    background: rgba(74, 144, 164, 0.1);
-    border-left: 4px solid #4a90a4;
+    background: rgba(124, 152, 179, 0.1);
+    border-left: 4px solid #536878;
     padding: 1.5rem;
     margin: 1.5rem 0;
     border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.theme-box h3 {
+    color: #2c3e50;
+}
+
+.theme-box p {
+    color: #2c3e50;
+}
+
+/* Color symbolism highlight box */
+.color-symbol {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 2px solid #2c3e50;
+}
+
+.blue-grey {
+    background: #7c98b3;
+}
+
+.white-symbol {
+    background: #ffffff;
+}
+
+.pastel {
+    background: linear-gradient(45deg, #fce4ec, #e1bee7, #c5cae9);
+}
+
+.dark {
+    background: #37474f;
+}
+/* Island Gallery */
+.island-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.island-card {
+    text-align: center;
+}
+
+.island-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.island-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid #7c98b3;
+    background-size: cover;
+    background-position: center;
+}
+
+.estate {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+}
+
+.beach {
+    background: linear-gradient(135deg, #87ceeb 0%, #4682b4 100%);
+}
+
+.clairmont {
+    background: linear-gradient(135deg, #d4a574 0%, #8b6f47 100%);
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.island-image:hover .hover-text {
+    opacity: 1;
+}
+
+.island-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.image-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #536878;
+    font-style: italic;
+}
+
+/* Glitch effect for missing memories */
+.glitch {
+    animation: glitchAnimation 3s infinite;
+    border-color: #ff6b6b;
+}
+
+@keyframes glitchAnimation {
+    0%, 90%, 100% {
+        transform: translate(0);
+    }
+    92% {
+        transform: translate(-2px, 2px);
+    }
+    94% {
+        transform: translate(2px, -2px);
+    }
+    96% {
+        transform: translate(-2px, -2px);
+    }
+    98% {
+        transform: translate(2px, 2px);
+    }
+}
+
+.clue-hint {
+    font-size: 0.9rem;
+    color: #78909c;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Evidence grid layout */
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
 }

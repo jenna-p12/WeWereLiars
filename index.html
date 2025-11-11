@@ -9,82 +9,176 @@
 <body>
     <nav>
         <button onclick="showPage('home')" class="nav-btn active">Home</button>
-        <button onclick="showPage('timeline')" class="nav-btn">Timeline</button>
-        <button onclick="showPage('evidence')" class="nav-btn">Evidence</button>
-        <button onclick="showPage('themes')" class="nav-btn">Themes</button>
+        <button onclick="showPage('timeline')" class="nav-btn">Memory Lab</button>
+        <button onclick="showPage('evidence')" class="nav-btn">Evidence Room</button>
+        <button onclick="showPage('themes')" class="nav-btn">Themes & Theory</button>
     </nav>
 
     <div id="home" class="page active">
         <h1>Sinclair Island</h1>
-        <p class="subtitle">A beautiful family. A private island. A damaged girl.</p>
+        <p class="subtitle">A place of wealth, secrecy, and fractured memories.</p>
         <div class="intro">
-            <p>Welcome to Sinclair Island. Explore the memories, examine the evidence, and uncover the truth.</p>
+            <p>Welcome to Sinclair Island. Explore the summers that shaped Cadence and uncover the truth hidden beneath perfection.</p>
+            <p style="margin-top: 1.5rem; font-style: italic; color: #536878;">Hover over the island images below to reveal their secrets...</p>
+        </div>
+        
+        <div class="island-gallery">
+            <div class="island-card">
+                <h3>The Sinclair Estate</h3>
+                <div class="island-image estate">
+                    <div class="hover-text">Luxury hides secrets</div>
+                </div>
+                <p class="image-caption">Add description and citation here</p>
+            </div>
+            <div class="island-card">
+                <h3>The Beach</h3>
+                <div class="island-image beach">
+                    <div class="hover-text">Where the Liars gathered</div>
+                </div>
+                <p class="image-caption">Add description and citation here</p>
+            </div>
+            <div class="island-card">
+                <h3>Clairmont House</h3>
+                <div class="island-image clairmont">
+                    <div class="hover-text">The house that burned</div>
+                </div>
+                <p class="image-caption">Add description and citation here</p>
+            </div>
         </div>
     </div>
 
     <div id="timeline" class="page">
-        <h2>Timeline</h2>
+        <h2>Memory Lab / Timeline</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Click on each summer to reveal Cadence's fragmented memories</p>
+        
         <div class="card" onclick="toggleCard(this)">
-            <h3>Summer 8</h3>
-            <p>First Summer - The beginning</p>
+            <h3>Summer 1 (Age 8)</h3>
+            <p>The first trip to the island. Everything feels perfect...</p>
             <div class="detail">
-                <p>Add your memory details here.</p>
+                <p>Add your memory details and citations here.</p>
             </div>
         </div>
-        <div class="card" onclick="toggleCard(this)">
-            <h3>Summer 15</h3>
-            <p>The Accident - Everything changed</p>
+        
+        <div class="card glitch" onclick="toggleCard(this)">
+            <h3>Summer 8 (Age 15) ⚠️</h3>
+            <p>Something went wrong. I don't remember... but I feel it.</p>
             <div class="detail">
-                <p>Add your memory details here.</p>
+                <p><strong>Missing Memory:</strong> Add details about the accident and citations here.</p>
             </div>
         </div>
+        
         <div class="card" onclick="toggleCard(this)">
-            <h3>Summer 17</h3>
-            <p>Return - Coming back</p>
+            <h3>Summer 9 (Age 17)</h3>
+            <p>Return to the island. Searching for answers...</p>
             <div class="detail">
-                <p>Add your memory details here.</p>
+                <p>Add your memory details and citations here.</p>
+            </div>
+        </div>
+        
+        <div class="card" onclick="toggleCard(this)">
+            <h3>Additional Summers</h3>
+            <p>Add more summer entries as needed</p>
+            <div class="detail">
+                <p>Add your memory details and citations here.</p>
             </div>
         </div>
     </div>
 
     <div id="evidence" class="page">
-        <h2>Evidence Room</h2>
-        <div class="card" onclick="toggleCard(this)">
-            <h3>The Beach</h3>
-            <p class="quote">We are Liars</p>
-            <div class="detail">
-                <p>Add your analysis here.</p>
+        <h2>Evidence Room / Clues</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Click on each clue to reveal its significance</p>
+        
+        <div class="evidence-grid">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>🔍 Quote: "We are Liars"</h3>
+                <p class="quote">Add the full quote here</p>
+                <p class="clue-hint">Click to reveal significance</p>
+                <div class="detail">
+                    <p><strong>Significance:</strong> Add analysis about identity and family trauma here with citations.</p>
+                </div>
             </div>
-        </div>
-        <div class="card" onclick="toggleCard(this)">
-            <h3>The House</h3>
-            <p class="quote">Clairmont on the hill</p>
-            <div class="detail">
-                <p>Add your analysis here.</p>
+            
+            <div class="card" onclick="toggleCard(this)">
+                <h3>🏠 The Sinclair Home</h3>
+                <p class="quote">Add quote about the estate here</p>
+                <p class="clue-hint">Click to reveal significance</p>
+                <div class="detail">
+                    <p><strong>Significance:</strong> Add analysis about wealth and appearances here with citations.</p>
+                </div>
             </div>
-        </div>
-        <div class="card" onclick="toggleCard(this)">
-            <h3>The Dogs</h3>
-            <p class="quote">Add quote here</p>
-            <div class="detail">
-                <p>Add your analysis here.</p>
+            
+            <div class="card" onclick="toggleCard(this)">
+                <h3>💊 The Headaches</h3>
+                <p class="quote">Add quote about Cadence's pain here</p>
+                <p class="clue-hint">Click to reveal significance</p>
+                <div class="detail">
+                    <p><strong>Significance:</strong> Add analysis about trauma and memory here with citations.</p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="toggleCard(this)">
+                <h3>🔥 The Fire</h3>
+                <p class="quote">Add quote about what happened here</p>
+                <p class="clue-hint">Click to reveal significance</p>
+                <div class="detail">
+                    <p><strong>Significance:</strong> Add analysis about the central event here with citations.</p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="toggleCard(this)">
+                <h3>🐕 The Dogs</h3>
+                <p class="quote">Add quote about the dogs here</p>
+                <p class="clue-hint">Click to reveal significance</p>
+                <div class="detail">
+                    <p><strong>Significance:</strong> Add analysis about this clue here with citations.</p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="toggleCard(this)">
+                <h3>📝 Family Secrets</h3>
+                <p class="quote">Add quote about family dynamics here</p>
+                <p class="clue-hint">Click to reveal significance</p>
+                <div class="detail">
+                    <p><strong>Significance:</strong> Add analysis about denial and secrets here with citations.</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="themes" class="page">
-        <h2>Themes</h2>
+        <h2>Themes & Theory</h2>
+        
         <div class="theme-box">
-            <h3>Memory and Narration</h3>
-            <p>Add your analysis with citations here.</p>
+            <h3><span class="color-symbol blue-grey"></span>Color and Symbolism</h3>
+            <p><strong>Blue/Grey:</strong> Represents Cadence's emotional state of confusion and sadness. The cloudy blue mirrors her cloudy mind after the accident, symbolizing her struggle with memory and truth.</p>
+            <p><strong><span class="color-symbol white-symbol"></span>White:</strong> Symbolizes the Sinclair family's image of perfection and their pristine private island. This white facade hides the darker secrets and represents the family's obsession with appearances over reality.</p>
+            <p><strong><span class="color-symbol pastel"></span>Bright Pastels:</strong> Used in flashbacks to represent the carefree, luxurious life the family presents. These vibrant colors create a stark contrast to the underlying emotional pain and tragedy.</p>
+            <p><strong><span class="color-symbol dark"></span>Dark Tones:</strong> Represent the hidden truth and the darker reality beneath the beautiful surface of Sinclair Island.</p>
+            <p><em>E. Lockhart uses this color symbolism throughout the novel to reinforce themes of deception, privilege, and memory loss.</em></p>
         </div>
+        
+        <div class="theme-box">
+            <h3>Memory and Unreliable Narration</h3>
+            <p>Memory is unreliable for Cadence. Lockhart uses fragmented narration to let the reader experience her confusion and pain.</p>
+            <p><em>Add specific examples and citations here (Chapters 3, 12).</em></p>
+        </div>
+        
         <div class="theme-box">
             <h3>Privilege and Class</h3>
-            <p>Add your analysis with citations here.</p>
+            <p>The Sinclair family's wealth shapes every aspect of the story. Their privilege creates both opportunity and tragedy.</p>
+            <p><em>Add specific examples and citations here (Chapter 2).</em></p>
         </div>
+        
         <div class="theme-box">
             <h3>Denial and Truth</h3>
-            <p>Add your analysis with citations here.</p>
+            <p>The family's collective denial and Cadence's personal denial create the central tension of the novel.</p>
+            <p><em>Add specific examples and citations here (Chapters 6-7, 11-12).</em></p>
+        </div>
+        
+        <div class="theme-box">
+            <h3>Trauma and Emotional Impact</h3>
+            <p>Cadence's physical symptoms reflect her psychological trauma. The headaches, the amnesia, and her pain are all connected to the truth she can't face.</p>
+            <p><em>Add specific examples and citations here.</em></p>
         </div>
     </div>
 
