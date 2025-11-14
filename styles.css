@@ -263,18 +263,6 @@ h3 {
     background-position: center;
 }
 
-.estate {
-    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
-}
-
-.beach {
-    background: linear-gradient(135deg, #87ceeb 0%, #4682b4 100%);
-}
-
-.clairmont {
-    background: linear-gradient(135deg, #d4a574 0%, #8b6f47 100%);
-}
-
 .hover-text {
     position: absolute;
     top: 0;
