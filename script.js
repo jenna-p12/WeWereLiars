@@ -23,3 +23,6 @@ function toggleCard(element) {
         detail.classList.add('show');
     }
 }
+function flipCard(element) {
+    element.classList.toggle('flipped');
+}

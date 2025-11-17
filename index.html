@@ -15,34 +15,47 @@
     </nav>
 
     <div id="home" class="page active">
-        <h1>Sinclair Island</h1>
-        <p class="subtitle">A place of wealth, secrecy, and fractured memories.</p>
+        <h1>Welcome to Sinclair Island</h1>
+        <p class="subtitle">"We are Sinclairs. No one is needy. No one is wrong" (Lockhart 16).</p>
         <div class="intro">
-            <p>Welcome to Sinclair Island. Explore the summers that shaped Cadence and uncover the truth hidden beneath perfection.</p>
+            <p>Sinclair Island looks perfect from a distance.</p>
+            <p>Blue water, white sand, and elegant houses that have been passed down through generations.</p>
+            <p>The Sinclairs were taught to smile, to shine, to never let their weaknesses show.</p>
+            <p></p>
+            <p>But Cadence's memories don't shine, they disappear and fracture.</p>
+            <p>They leave behhind sharp, scattered, aching pieces.</p>
+            <p></p>
+            <p>This website allows you to explore the island the way Cadence remembers it:</p>
+            <ul>
+                <li>In fragments</li>
+                <li>In flashes</li>
+                <li>In truths that are hidden inside lies</li>
+            </ul>
+            <p>Try to understand what happened the summer that everything burned.</p>
             <p style="margin-top: 1.5rem; font-style: italic; color: #536878;">Hover over the island images below to reveal their secrets...</p>
         </div>
         
         <div class="island-gallery">
             <div class="island-card">
                 <h3>The Sinclair Estate</h3>
-                <div class="island-image estate">
-                    <img src="estate.png" alt="Sinclair Estate" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="island-image">
+                    <img src="estate.png" alt="Sinclair Estate">
                     <div class="hover-text">Luxury hides secrets</div>
                 </div>
                 <p class="image-caption">Image Source: https://www.atlasofwonders.com/2025/06/where-was-we-were-liars-filmed-beechwood-island.html</p>
             </div>
             <div class="island-card">
                 <h3>The Beach</h3>
-                <div class="island-image beach">
-                    <img src="beach.png" alt="Beach" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="island-image">
+                    <img src="beach.png" alt="Beach">
                     <div class="hover-text">Where the Liars gathered</div>
                 </div>
                 <p class="image-caption">Image Source: https://www.atlasofwonders.com/2025/06/where-was-we-were-liars-filmed-beechwood-island.html</p>
             </div>
             <div class="island-card">
                 <h3>Clairmont House</h3>
-                <div class="island-image clairmont">
-                    <img src="clairmont.png" alt="Clairmont House" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="island-image">
+                    <img src="clairmont.png" alt="Clairmont House">
                     <div class="hover-text">The house that burned</div>
                 </div>
                 <p class="image-caption">Image Source: https://www.atlasofwonders.com/2025/06/where-was-we-were-liars-filmed-beechwood-island.html</p>
@@ -50,99 +63,132 @@
         </div>
     </div>
 
-    <div id="timeline" class="page">
-        <h2>Memory Lab / Timeline</h2>
-        <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Click on each summer to reveal Cadence's fragmented memories</p>
-        
-        <div class="card" onclick="toggleCard(this)">
-            <h3>Summer 1 (Age 8)</h3>
-            <p>The first trip to the island. Everything feels perfect...</p>
-            <div class="detail">
-                <p>Add your memory details and citations here.</p>
+<div id="timeline" class="page">
+    <h2>Reconstruct the Summers</h2>
+    <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Cadence Sinclair-Eastman remembers this in fragments, like a puzzle. Headaches blur the truth. Trauma hides in the gaps.</p>
+    <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Click each mmemory to reveal what she can and can't remember about her time on the island during the Summer of 15. </p>
+
+    <div class="flashcard-container">
+        <div class="flashcard glitch" onclick="flipCard(this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h3>MEMORY CARD I - Summer Four (Locked)</h3>
+                    <p class="flip-hint">Click to reveal</p>
+                </div>
+                <div class="flashcard-back">
+                    <h3>MEMORY CARD I - Summer Four (Locked)</h3>
+                    <p>Add your memory details and citations here.</p>
+                </div>
             </div>
         </div>
-        
-        <div class="card glitch" onclick="toggleCard(this)">
-            <h3>Summer 8 (Age 15) ⚠️</h3>
-            <p>Something went wrong. I don't remember... but I feel it.</p>
-            <div class="detail">
-                <p><strong>Missing Memory:</strong> Add details about the accident and citations here.</p>
+
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h3>MEMORY CARD II - The Golden Summer (Age 15)</h3>
+                    <p>Something went wrong. I don't remember... but I feel it.</p>
+                    <p class="flip-hint">Click to reveal</p>
+                </div>
+                <div class="flashcard-back">
+                    <h3>MEMORY CARD II - The Golden Summer (Age 15)</h3>
+                    <p><strong>Missing Memory:</strong> Add details about the accident and citations here.</p>
+                </div>
             </div>
         </div>
-        
-        <div class="card" onclick="toggleCard(this)">
-            <h3>Summer 9 (Age 17)</h3>
-            <p>Return to the island. Searching for answers...</p>
-            <div class="detail">
-                <p>Add your memory details and citations here.</p>
+
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h3>MEMORY CARD III - Return to Beechwood</h3>
+                    <p>Return to the island. Searching for answers...</p>
+                    <p class="flip-hint">Click to reveal</p>
+                </div>
+                <div class="flashcard-back">
+                    <h3>MEMORY CARD III - Return to Beechwood</h3>
+                    <p>Add your memory details and citations here.</p>
+                </div>
             </div>
         </div>
-        
-        <div class="card" onclick="toggleCard(this)">
-            <h3>Additional Summers</h3>
-            <p>Add more summer entries as needed</p>
-            <div class="detail">
-                <p>Add your memory details and citations here.</p>
+
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h3>MEMORY CARD VI - A Missing Piece</h3>
+                    <p>Add more summer entries as needed</p>
+                    <p class="flip-hint">Click to reveal</p>
+                </div>
+                <div class="flashcard-back">
+                    <h3>MEMORY CARD VI - A Missing Piece</h3>
+                    <p>Add your memory details and citations here.</p>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
     <div id="evidence" class="page">
-        <h2>Evidence Room / Clues</h2>
-        <p style="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Click on each clue to reveal its significance</p>
-        
+        <h2>Clues & Secrets</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Every truth Sinclair Island leaves a trace.</p>
+        <p style ="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Investigate each artifact. Some wil clarify and some will confuse.</p>
+        <p style = "text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Together, they build the truth Cadence has been avoiding.</p>
+
         <div class="evidence-grid">
             <div class="card" onclick="toggleCard(this)">
-                <h3>🔍 Quote: "We are Liars"</h3>
-                <p class="quote">Add the full quote here</p>
+                <h3>Clue 1 - Sinclair Family Motto</h3>
+                <p class="quote">"No one is a criminal. No one is an addict. No one is a failure" (Lockhart 16).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Add analysis about identity and family trauma here with citations.</p>
+                    <p><strong>Significance:</strong>This motto isn't pride, it's denial. It is a rule that keeps the Sinclairs elegant on the outside while they break inside. It shows the family's obession with image, even when it destroys them.</p>
                 </div>
             </div>
             
             <div class="card" onclick="toggleCard(this)">
-                <h3>🏠 The Sinclair Home</h3>
-                <p class="quote">Add quote about the estate here</p>
+                <h3>Clue 2 - Burned Floorboard</h3>
+                <p class="quote">"I threw the flaming roll into the kindling and watched it light. It caught, and grew, and spread" (Lockhart 223).</p>
+                <p class="quote">"We burned not a home, but a symbol. We burned a symbol to the ground" (Lockhart 168).</p>
+
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Add analysis about wealth and appearances here with citations.</p>
+                    <p><strong>Significance:</strong>The fire didn't just destroy Clairmont, it erased the truth. Or maybe hid it. Cadence's missing memories are tied to this place, this night, this flame, showing how trauma can hide what we cannot face.</p>
                 </div>
             </div>
             
             <div class="card" onclick="toggleCard(this)">
-                <h3>💊 The Headaches</h3>
-                <p class="quote">Add quote about Cadence's pain here</p>
+                <h3>Clue 3 - The Headaches</h3>
+                <p class="quote">"A truck is rolling over the bones of my neck and head. The vertebrae break, the brains pop and ooze. A thousand ashlights shine in my eyes. The world tilts. I throw up. I black out" (Lockhart 48).</p>
+                <p class ="quote">" 'But listen. You have no idea what it feels like to have headaches like this. No idea. It hurts,” I say—and I realize tears are running down my face, though I'm not sobbing. “It makes it hard to be alive, some days. A lot of times I wish I were dead, I truly do, just to make the pain stop' " (Lockhart 146).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Add analysis about trauma and memory here with citations.</p>
+                    <p><strong>Significance:</strong> Cadence's headaches are both physical and emotional symptoms of her trauma. They block her memories of the fire, distort her perception, and show the intense suffering and self-blame that she experiences. Her pain explains why her narration is fragmented, highlighting how truma can overwhelm memory and reality.</p>
                 </div>
             </div>
             
             <div class="card" onclick="toggleCard(this)">
-                <h3>🔥 The Fire</h3>
-                <p class="quote">Add quote about what happened here</p>
+                <h3>Clue 4 - Gat's Note</h3>
+                <p class="quote">" 'Do not accept an evil you can change' " (Lockhart 117).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Add analysis about the central event here with citations.</p>
+                    <p><strong>Significance:</strong> Gat challenges the Sinclair's view on the world, refusing to let wealth or privilege excuse silence. He pushes Cadence toward honesty and moral awareness, constrasting the family's avoidance of responsibility.</p>
                 </div>
             </div>
             
             <div class="card" onclick="toggleCard(this)">
-                <h3>🐕 The Dogs</h3>
-                <p class="quote">Add quote about the dogs here</p>
+                <h3>Clue 5 - Mirren's Warning</h3>
+                <p class="quote">" 'Penny said the doctors want it left alone...' " (Lockhart 161).</p>
+                <p class="quote">" 'That's all I can say, my darling Cady' " (Lockhart 161).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Add analysis about this clue here with citations.</p>
+                    <p><strong>Significance:</strong> Mirren tries to protect Cadence from the truth, even after her death. Her love becomes its own form of haunting, showing how care and secrecy can intertwine in trauma.</p>
                 </div>
             </div>
             
             <div class="card" onclick="toggleCard(this)">
-                <h3>📝 Family Secrets</h3>
-                <p class="quote">Add quote about family dynamics here</p>
+                <h3>Clue 6 - Dog Tag</h3>
+                <p class="quote">"What a horrible death for those poor, dear, naughty dogs" (Lockhart 207).</p>
+                <p class="quote">"The dogs are dead, the stupid, lovely dogs, the dogs I could have saved..." (Lockhart 208).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Add analysis about denial and secrets here with citations.</p>
+                    <p><strong>Significance:</strong> Cadence remembering the death of her grandfather's dogs hints at the fire's real consequences of living things getting burned, not just objects. It forshadows the truth of the Liars themselves and the depth of loss tied to the family's secrets.</p>
                 </div>
             </div>
         </div>
