@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="particles" id="particles"></div>
     <nav>
         <button onclick="showPage('home')" class="nav-btn active">Home</button>
         <button onclick="showPage('timeline')" class="nav-btn">Memory Lab</button>
@@ -23,7 +24,7 @@
             <p>The Sinclairs were taught to smile, to shine, to never let their weaknesses show.</p>
             <p></p>
             <p>But Cadence's memories don't shine, they disappear and fracture.</p>
-            <p>They leave behhind sharp, scattered, aching pieces.</p>
+            <p>They leave behind sharp, scattered, aching pieces.</p>
             <p></p>
             <p>This website allows you to explore the island the way Cadence remembers it:</p>
             <ul>
@@ -32,14 +33,14 @@
                 <li>In truths that are hidden inside lies</li>
             </ul>
             <p>Try to understand what happened the summer that everything burned.</p>
-            <p style="margin-top: 1.5rem; font-style: italic; color: #536878;">Hover over the island images below to reveal their secrets...</p>
+            <p style="margin-top: 1.5rem; font-style: italic;">Hover over the island images below to reveal their secrets...</p>
         </div>
         
         <div class="island-gallery">
             <div class="island-card">
                 <h3>The Sinclair Estate</h3>
                 <div class="island-image">
-                    <img src="estate.png" alt="Sinclair Estate">
+                    <img src="estate.png" alt="Sinclair Estate" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="hover-text">Luxury hides secrets</div>
                 </div>
                 <p class="image-caption">Image Source: https://www.atlasofwonders.com/2025/06/where-was-we-were-liars-filmed-beechwood-island.html</p>
@@ -47,7 +48,7 @@
             <div class="island-card">
                 <h3>The Beach</h3>
                 <div class="island-image">
-                    <img src="beach.png" alt="Beach">
+                    <img src="beach.png" alt="Beach" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="hover-text">Where the Liars gathered</div>
                 </div>
                 <p class="image-caption">Image Source: https://www.atlasofwonders.com/2025/06/where-was-we-were-liars-filmed-beechwood-island.html</p>
@@ -55,7 +56,7 @@
             <div class="island-card">
                 <h3>Clairmont House</h3>
                 <div class="island-image">
-                    <img src="clairmont.png" alt="Clairmont House">
+                    <img src="clairmont.png" alt="Clairmont House" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="hover-text">The house that burned</div>
                 </div>
                 <p class="image-caption">Image Source: https://www.atlasofwonders.com/2025/06/where-was-we-were-liars-filmed-beechwood-island.html</p>
@@ -65,19 +66,25 @@
 
 <div id="timeline" class="page">
     <h2>Reconstruct the Summers</h2>
-    <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Cadence Sinclair-Eastman remembers this in fragments, like a puzzle. Headaches blur the truth. Trauma hides in the gaps.</p>
-    <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Click each mmemory to reveal what she can and can't remember about her time on the island during the Summer of 15. </p>
+    <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">Cadence Sinclair-Eastman remembers this in fragments, it's a shattered mirror. Some pieces are bright, some are burned, and some refuse to be touched at all.</p>
+    <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">This lab allows you to "reconstruct" her memory the way Cady experiences it: fragmented, emotional, and distorted by trauma.</p>
 
     <div class="flashcard-container">
         <div class="flashcard glitch" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>MEMORY CARD I - Summer Four (Locked)</h3>
-                    <p class="flip-hint">Click to reveal</p>
+                    <h3>⚠️ MEMORY INACCESSIBLE</h3>
+                    <p>" 'Someone did something to me that is too awful to remember...' (Lockhart 153)."</p>
+                    <p class="flip-hint">Memory Locked - Click to attempt access</p>
                 </div>
                 <div class="flashcard-back">
-                    <h3>MEMORY CARD I - Summer Four (Locked)</h3>
-                    <p>Add your memory details and citations here.</p>
+                    <h3>🔒 Summer Seventeen (Locked)</h3>
+                    <p><strong>Cadence knows two things about Summer Seventeen:</strong></p>
+                    <p>1. She was injured</p>
+                    <p>2. Everyone else is lying to her</p>
+                    <p>Every time she tries to remember what happened, the pain rises in waves, headaches, nausea, blackness. </p>
+                    <p>Her amnesia isn't just forgetting; it's protection.</p>
+                    <p><em>Cadence often describes the migraines and memory loss immediately following her accident.</em></p>
                 </div>
             </div>
         </div>
@@ -86,12 +93,15 @@
             <div class="flashcard-inner">
                 <div class="flashcard-front">
                     <h3>MEMORY CARD II - The Golden Summer (Age 15)</h3>
-                    <p>Something went wrong. I don't remember... but I feel it.</p>
+                    <p style="font-style: italic;">"We Were Liars."</p>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
-                    <h3>MEMORY CARD II - The Golden Summer (Age 15)</h3>
-                    <p><strong>Missing Memory:</strong> Add details about the accident and citations here.</p>
+                    <h3>The Golden Summer (Age 15)</h3>
+                    <p>Summer 15 was everything: Gat teaching her to think beyond Sinclair traditions, Mirren telling stories, Johnny making her laugh. The four of them becoming their own universe. </p>
+                    <p>But even then, cracks were forming. The aunts were fighting over their inheritance, tension simmering under perfect lawns and white wine.</p>
+                    <p>This was the last summer where Cady believed everything could be fixed.</p>
+                    <p><em>Cadence idealizes this summer as the peak happiness with the Liars.</em></p>
                 </div>
             </div>
         </div>
@@ -100,12 +110,15 @@
             <div class="flashcard-inner">
                 <div class="flashcard-front">
                     <h3>MEMORY CARD III - Return to Beechwood</h3>
-                    <p>Return to the island. Searching for answers...</p>
+                    <p>The island is the same. I'm not.</p>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
-                    <h3>MEMORY CARD III - Return to Beechwood</h3>
-                    <p>Add your memory details and citations here.</p>
+                    <h3>Return to Beechwood</h3>
+                    <p>When Cadence returns two years later, nothing feels normal. Her grandfather's house had been replaced, redone. Her mother watches her too carefully, like a porcelain doll that is waiting to shatter. Everyone watches their words carefully around her, as if she'll break.</p>
+                    <p>The Liars, Gat, Mirren, and Johnny are always just out of reach.</p>
+                    <p>Cady feels like a visitor in her own life, walking through a place full of ghosts.</p>
+                    <p><em>Cadence expresses alienation when she returns, noticing that the island feels unfamiliar and distant, cold almost.</em></p>
                 </div>
             </div>
         </div>
@@ -113,13 +126,31 @@
         <div class="flashcard" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>MEMORY CARD VI - A Missing Piece</h3>
-                    <p>Add more summer entries as needed</p>
+                    <h3>MEMORY CARD IV - Flash Fragments</h3>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
-                    <h3>MEMORY CARD VI - A Missing Piece</h3>
-                    <p>Add your memory details and citations here.</p>
+                    <h3>Flash Fragments</h3>
+                    <p>Cadence sees her memories in flashes: a dog barking, the smell of gasoline, running feet, heat, fear, a lighter, and flames.</p>
+                    <p>Each piece feels true. But none of them form a whole memory.</p>
+                    <p>The truth is still buried beneath the trauma.</p>
+                    <p><em>Throughout the novel, Cadence receives short, sensory memories connected to the fire.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h3>MEMORY CARD V - The Realization</h3>
+                    <p class="flip-hint">Click to reveal</p>
+                </div>
+                <div class="flashcard-back">
+                    <h3>The Realization</h3>
+                    <p>The truth doesn't return suddenly, it's painfully slow.</p>
+                    <p>Cadence begins to understand that the fire, the accident, the reason no one will speak is tied to the people she loves the most.</p>
+                    <p>Her memory returns only when she is emotionally strong enough to face it.</p>
+                    <p><em>Cadence's slow recovery of her memories leads to the final reveal of the Liars and their outcome.</em></p>
                 </div>
             </div>
         </div>
@@ -129,7 +160,7 @@
     <div id="evidence" class="page">
         <h2>Clues & Secrets</h2>
         <p style="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Every truth Sinclair Island leaves a trace.</p>
-        <p style ="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Investigate each artifact. Some wil clarify and some will confuse.</p>
+        <p style ="text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Investigate each artifact. Some will clarify and some will confuse.</p>
         <p style = "text-align: center; margin-bottom: 2rem; color: #eceff1; font-style: italic;">Together, they build the truth Cadence has been avoiding.</p>
 
         <div class="evidence-grid">
@@ -138,7 +169,7 @@
                 <p class="quote">"No one is a criminal. No one is an addict. No one is a failure" (Lockhart 16).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong>This motto isn't pride, it's denial. It is a rule that keeps the Sinclairs elegant on the outside while they break inside. It shows the family's obession with image, even when it destroys them.</p>
+                    <p><strong>Significance:</strong>This motto isn't pride, it's denial. It is a rule that keeps the Sinclairs elegant on the outside while they break inside. It shows the family's obsession with image, even when it destroys them.</p>
                 </div>
             </div>
             
@@ -159,7 +190,7 @@
                 <p class ="quote">" 'But listen. You have no idea what it feels like to have headaches like this. No idea. It hurts,” I say—and I realize tears are running down my face, though I'm not sobbing. “It makes it hard to be alive, some days. A lot of times I wish I were dead, I truly do, just to make the pain stop' " (Lockhart 146).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Cadence's headaches are both physical and emotional symptoms of her trauma. They block her memories of the fire, distort her perception, and show the intense suffering and self-blame that she experiences. Her pain explains why her narration is fragmented, highlighting how truma can overwhelm memory and reality.</p>
+                    <p><strong>Significance:</strong> Cadence's headaches are both physical and emotional symptoms of her trauma. They block her memories of the fire, distort her perception, and show the intense suffering and self-blame that she experiences. Her pain explains why her narration is fragmented, highlighting how trauma can overwhelm memory and reality.</p>
                 </div>
             </div>
             
@@ -168,7 +199,7 @@
                 <p class="quote">" 'Do not accept an evil you can change' " (Lockhart 117).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Gat challenges the Sinclair's view on the world, refusing to let wealth or privilege excuse silence. He pushes Cadence toward honesty and moral awareness, constrasting the family's avoidance of responsibility.</p>
+                    <p><strong>Significance:</strong> Gat challenges the Sinclair's view on the world, refusing to let wealth or privilege excuse silence. He pushes Cadence toward honesty and moral awareness, contrasting the family's avoidance of responsibility.</p>
                 </div>
             </div>
             
@@ -188,7 +219,7 @@
                 <p class="quote">"The dogs are dead, the stupid, lovely dogs, the dogs I could have saved..." (Lockhart 208).</p>
                 <p class="clue-hint">Click to reveal significance</p>
                 <div class="detail">
-                    <p><strong>Significance:</strong> Cadence remembering the death of her grandfather's dogs hints at the fire's real consequences of living things getting burned, not just objects. It forshadows the truth of the Liars themselves and the depth of loss tied to the family's secrets.</p>
+                    <p><strong>Significance:</strong> Cadence remembering the death of her grandfather's dogs hints at the fire's real consequences of living things getting burned, not just objects. It foreshadows the truth of the Liars themselves and the depth of loss tied to the family's secrets.</p>
                 </div>
             </div>
         </div>
@@ -199,38 +230,41 @@
         
         <div class="theme-box">
             <h3><span class="color-symbol blue-grey"></span>Color and Symbolism</h3>
-            <p><strong>Blue/Grey:</strong> Represents Cadence's emotional state of confusion and sadness. The cloudy blue mirrors her cloudy mind after the accident, symbolizing her struggle with memory and truth.</p>
-            <p><strong><span class="color-symbol white-symbol"></span>White:</strong> Symbolizes the Sinclair family's image of perfection and their pristine private island. This white facade hides the darker secrets and represents the family's obsession with appearances over reality.</p>
-            <p><strong><span class="color-symbol pastel"></span>Bright Pastels:</strong> Used in flashbacks to represent the carefree, luxurious life the family presents. These vibrant colors create a stark contrast to the underlying emotional pain and tragedy.</p>
-            <p><strong><span class="color-symbol dark"></span>Dark Tones:</strong> Represent the hidden truth and the darker reality beneath the beautiful surface of Sinclair Island.</p>
-            <p><em>E. Lockhart uses this color symbolism throughout the novel to reinforce themes of deception, privilege, and memory loss.</em></p>
+            <p><strong>Blue/Grey:</strong> Represents Cadence's emotional state of confusion and sadness. The blue is cloudy which mirrors her cloudy mind after the fire/accident. This symbolizes her struggle with memory and the truth.</p>
+            <p><strong><span class="color-symbol white-symbol"></span>White:</strong> Represents the Sinclair family image, perfection, and their spoiled private island. This white exterior hides the dark secrets and represents the family's obsession with perfect appearances over reality.</p>
+            <p><strong><span class="color-symbol dark"></span>Dark Tones:</strong> Represents the hidden truth and the dark reality beneath the beautiful surface of Sinclair Island.</p>
+            <p><em>E. Lockhart uses color symbolism throughout the novel to reinforce themes of deception, privilege, and memory loss.</em></p>
         </div>
         
         <div class="theme-box">
-            <h3>Memory and Unreliable Narration</h3>
-            <p>Memory is unreliable for Cadence. Lockhart uses fragmented narration to let the reader experience her confusion and pain.</p>
-            <p><em>Add specific examples and citations here (Chapters 3, 12).</em></p>
+            <h3>Memory & Trauma</h3>
+            <p>Cadence's narration is broken on purpose. Her missing memories represent how trauma can bury truths that are too painful to face. The book reads like a puzzle, or a shattered mirror which is how her mind works. Readers are to experience the same confusion and disorientation that Cady feels.</p>
+            <p><em>" 'Because I have headaches, because I can't remember my accident, I can't handle the idea that Clairmont burned down?' " (Lockhart 203).</em></p>
         </div>
         
         <div class="theme-box">
             <h3>Privilege and Class</h3>
-            <p>The Sinclair family's wealth shapes every aspect of the story. Their privilege creates both opportunity and tragedy.</p>
-            <p><em>Add specific examples and citations here (Chapter 2).</em></p>
+            <p>Beechwood Island is beautiful; however the Sinclair legacy is rotten underneath. Their wealth creates the pressure to appear perfect, the denial of their flaws, silence around conflict, and emotional manipulation.</p>
+            <p>Cadence, Gat, and the other Liars see how toxic the family's values are, chasing inheritance and that Sinclairs are always to be 'right' even if it hurts another.</p>
+            <p><em>"We are Sinclairs. No one is needy. No one is wrong" (Lockhart 16).</em></p>
         </div>
         
         <div class="theme-box">
             <h3>Denial and Truth</h3>
-            <p>The family's collective denial and Cadence's personal denial create the central tension of the novel.</p>
-            <p><em>Add specific examples and citations here (Chapters 6-7, 11-12).</em></p>
+            <p>The adults' refusal to address conflict causes their kids to take an action that is irreversible. Their fights over money and legacy intensify into something the Liars believe only a grand gesture can solve. </p>
+            <p>The fire becomes a symbol of cleansing, but also devastation. Denial burns everything.</p>
+            <p><em>" 'And angrier, every time. Screaming at each other. Staggering around the lawn. Granddad did nothing but fuel them. We watched them quarrel over Gran's things and the art that hung in Clairmont—but real estate and money most of all' " (Lockhart 170).</em></p>
+            <p><em>"They no longer had the glue of Gran keeping them together, and they fought over their memories, her jewelry, the clothes in her closet, her shoes, even. These affairs had not been settled in October" (Lockhart 171-172).</em></p>
         </div>
         
         <div class="theme-box">
-            <h3>Trauma and Emotional Impact</h3>
-            <p>Cadence's physical symptoms reflect her psychological trauma. The headaches, the amnesia, and her pain are all connected to the truth she can't face.</p>
-            <p><em>Add specific examples and citations here.</em></p>
+            <h3>Love & Loyalty</h3>
+            <p>The Liars are bounded by love. Their loyalty drives the plot, making them brave, idealistic, and reckless.</p>
+            <p>They want to fix everything wrong with the Sinclairs, but the cost is high.</p>
+            <p><em>"What if we could stop being different colors, different backgrounds, and just be in love?" (Lockhart 197).</em></p>
         </div>
     </div>
-
+    <button id="scrollToTop" onclick="scrollToTop()">↑</button>
     <script src="script.js"></script>
 </body>
 </html>
