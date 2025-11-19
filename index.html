@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="particles" id="particles"></div>
     <nav>
         <button onclick="showPage('home')" class="nav-btn active">Home</button>
         <button onclick="showPage('timeline')" class="nav-btn">Memory Lab</button>
@@ -70,10 +69,11 @@
     <p style="text-align: center; margin-bottom: 2rem; color: #4a148c; font-style: italic;">This lab allows you to "reconstruct" her memory the way Cady experiences it: fragmented, emotional, and distorted by trauma.</p>
 
     <div class="flashcard-container">
-        <div class="flashcard glitch" onclick="flipCard(this)">
+        <div class="flashcard" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>⚠️ MEMORY INACCESSIBLE</h3>
+                    <div class="locked-badge">⚠️ LOCKED</div>
+                    <h3>⚠️MEMORY INACCESSIBLE⚠️</h3>
                     <p>" 'Someone did something to me that is too awful to remember...' (Lockhart 153)."</p>
                     <p class="flip-hint">Memory Locked - Click to attempt access</p>
                 </div>
@@ -82,9 +82,9 @@
                     <p><strong>Cadence knows two things about Summer Seventeen:</strong></p>
                     <p>1. She was injured</p>
                     <p>2. Everyone else is lying to her</p>
-                    <p>Every time she tries to remember what happened, the pain rises in waves, headaches, nausea, blackness. </p>
+                    <p>Every time she tries to remember what happened, the pain rises in waves, headaches, nausea, blackness.</p>
                     <p>Her amnesia isn't just forgetting; it's protection.</p>
-                    <p><em>Cadence often describes the migraines and memory loss immediately following her accident.</em></p>
+                    <em>Cadence often describes the migraines and memory loss immediately following her accident.</em>
                 </div>
             </div>
         </div>
@@ -92,16 +92,24 @@
         <div class="flashcard" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>MEMORY CARD II - The Golden Summer (Age 15)</h3>
+                    <div class="memory-badge">Summer 15</div>
+                    <div class="truth-gradient"></div>
+                    <h3>The Golden Summer</h3>
                     <p style="font-style: italic;">"We Were Liars."</p>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
                     <h3>The Golden Summer (Age 15)</h3>
-                    <p>Summer 15 was everything: Gat teaching her to think beyond Sinclair traditions, Mirren telling stories, Johnny making her laugh. The four of them becoming their own universe. </p>
-                    <p>But even then, cracks were forming. The aunts were fighting over their inheritance, tension simmering under perfect lawns and white wine.</p>
+                    <p><strong>Summer Fifteen was everything:</strong></p>
+                    <ul class="memory-list">
+                        <li>Gat teaching her to think beyond Sinclair traditions</li>
+                        <li>Mirren telling stories</li>
+                        <li>Johnny making her laugh</li>
+                        <li>The four of them becoming their own universe</li>
+                    </ul>
+                    <p>But even then, the cracks were forming — the aunts fighting over inheritance, tension simmering under perfect lawns and white wine.</p>
                     <p>This was the last summer where Cady believed everything could be fixed.</p>
-                    <p><em>Cadence idealizes this summer as the peak happiness with the Liars.</em></p>
+                    <em>Cadence idealizes this summer as the height of happiness with the Liars.</em>
                 </div>
             </div>
         </div>
@@ -109,16 +117,18 @@
         <div class="flashcard" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>MEMORY CARD III - Return to Beechwood</h3>
-                    <p>The island is the same. I'm not.</p>
+                    <div class="memory-badge">Summer 19</div>
+                    <div class="truth-gradient"></div>
+                    <h3>Return to Beechwood</h3>
+                    <p>"The island is the same. I'm not."</p>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
                     <h3>Return to Beechwood</h3>
-                    <p>When Cadence returns two years later, nothing feels normal. Her grandfather's house had been replaced, redone. Her mother watches her too carefully, like a porcelain doll that is waiting to shatter. Everyone watches their words carefully around her, as if she'll break.</p>
-                    <p>The Liars, Gat, Mirren, and Johnny are always just out of reach.</p>
+                    <p>When Cadence returns two years later, nothing feels right. Her grandfather's house has been replaced. Her mother watches her too carefully. Everyone edits every sentence around her, as if she'll break.</p>
+                    <p>And the Liars — Gat, Mirren, Johnny — are always just out of reach.</p>
                     <p>Cady feels like a visitor in her own life, walking through a place full of ghosts.</p>
-                    <p><em>Cadence expresses alienation when she returns, noticing that the island feels unfamiliar and distant, cold almost.</em></p>
+                    <em>Cadence expresses deep alienation when she returns, noticing that the island feels unfamiliar and emotionally distant.</em>
                 </div>
             </div>
         </div>
@@ -126,15 +136,31 @@
         <div class="flashcard" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>MEMORY CARD IV - Flash Fragments</h3>
+                    <div class="memory-badge">Summer 16/17</div>
+                    <div class="shattered-overlay"></div>
+                    <h3>Flash Fragments</h3>
+                    <div class="fragment-list">
+                        <span>dog barking</span>
+                        <span>gasoline</span>
+                        <span>heat</span>
+                        <span>flames</span>
+                    </div>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
                     <h3>Flash Fragments</h3>
-                    <p>Cadence sees her memories in flashes: a dog barking, the smell of gasoline, running feet, heat, fear, a lighter, and flames.</p>
-                    <p>Each piece feels true. But none of them form a whole memory.</p>
-                    <p>The truth is still buried beneath the trauma.</p>
-                    <p><em>Throughout the novel, Cadence receives short, sensory memories connected to the fire.</em></p>
+                    <p><strong>Cadence sees memories in flashes:</strong></p>
+                    <ul class="memory-list">
+                        <li>A dog barking</li>
+                        <li>The smell of gasoline</li>
+                        <li>Running feet</li>
+                        <li>Heat</li>
+                        <li>Fear</li>
+                        <li>A lighter</li>
+                        <li>Flames</li>
+                    </ul>
+                    <p>Each piece feels true — but none of them form a whole memory. The truth is still buried beneath the trauma.</p>
+                    <em>Throughout the story, Cadence receives brief, disjointed sensory memories connected to the fire.</em>
                 </div>
             </div>
         </div>
@@ -142,18 +168,72 @@
         <div class="flashcard" onclick="flipCard(this)">
             <div class="flashcard-inner">
                 <div class="flashcard-front">
-                    <h3>MEMORY CARD V - The Realization</h3>
+                    <div class="memory-badge">Summer 17</div>
+                    <div class="truth-gradient"></div>
+                    <h3>The Realization</h3>
+                    <p>A faint ember colored light begins to emit.</p>
                     <p class="flip-hint">Click to reveal</p>
                 </div>
                 <div class="flashcard-back">
                     <h3>The Realization</h3>
-                    <p>The truth doesn't return suddenly, it's painfully slow.</p>
-                    <p>Cadence begins to understand that the fire, the accident, the reason no one will speak is tied to the people she loves the most.</p>
+                    <p>The truth doesn't return suddenly — it swells slowly, painfully.</p>
+                    <p>Cadence begins to understand that the fire, the accident, the reason no one will speak... is tied to the people she loves most.</p>
                     <p>Her memory returns only when she is emotionally strong enough to face it.</p>
-                    <p><em>Cadence's slow recovery of her memories leads to the final reveal of the Liars and their outcome.</em></p>
+                    <em>Cadence's gradual recovery of her memories leads to the final reveal about the Liars.</em>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="memory-puzzle">
+        <h3 style="color: #4a148c; text-align: center; margin-top: 4rem; margin-bottom: 1rem;">Memory Fragment Puzzle</h3>
+        <p style="text-align: center; color: #4a148c; font-style: italic; margin-bottom: 2rem;">
+            Arrange the fragments in chronological order to unlock the truth.
+        </p>
+        <div class="puzzle-grid" id="puzzleGrid">
+            <div class="puzzle-piece" draggable="true" data-order="1">
+                <div class="puzzle-tab top"></div>
+                <div class="puzzle-tab bottom"></div>
+                <div class="puzzle-tab left"></div>
+                <div class="puzzle-tab right"></div>
+                <span class="puzzle-number">?</span>
+                <p>"Summer 15: The Liars are inseparable"</p>
+            </div>
+            <div class="puzzle-piece" draggable="true" data-order="2">
+                <div class="puzzle-tab top"></div>
+                <div class="puzzle-tab bottom"></div>
+                <div class="puzzle-tab left"></div>
+                <div class="puzzle-tab right"></div>
+                <span class="puzzle-number">?</span>
+                <p>"Tension grows among the aunts"</p>
+            </div>
+            <div class="puzzle-piece" draggable="true" data-order="3">
+                <div class="puzzle-tab top"></div>
+                <div class="puzzle-tab bottom"></div>
+                <div class="puzzle-tab left"></div>
+                <div class="puzzle-tab right"></div>
+                <span class="puzzle-number">?</span>
+                <p>"Summer 17: The fire"</p>
+            </div>
+            <div class="puzzle-piece" draggable="true" data-order="4">
+                <div class="puzzle-tab top"></div>
+                <div class="puzzle-tab bottom"></div>
+                <div class="puzzle-tab left"></div>
+                <div class="puzzle-tab right"></div>
+                <span class="puzzle-number">?</span>
+                <p>"Cadence loses her memory"</p>
+            </div>
+            <div class="puzzle-piece" draggable="true" data-order="5">
+                <div class="puzzle-tab top"></div>
+                <div class="puzzle-tab bottom"></div>
+                <div class="puzzle-tab left"></div>
+                <div class="puzzle-tab right"></div>
+                <span class="puzzle-number">?</span>
+                <p>"Return to the island"</p>
+            </div>
+        </div>
+        <button class="check-puzzle-btn" onclick="checkPuzzle()">Check Order</button>
+        <p class="puzzle-result"></p>
     </div>
 </div>
 
